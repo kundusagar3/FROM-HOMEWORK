@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Detail Form</title>
+    <style>
+      .padding {
+        padding-top: 18px;
+      }
+      .margin-left {
+        margin-left: -4px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>Personal details</label>
+      <div>
+        <label>Salutation</label>
+        <div>
+          <select>
+            <option value="none" selected>--None--</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+          </select>
+        </div>
+      </div>
+      <div class="padding">
+        <label>First Name:</label>
+        <input type="text" placeholder="abcd" />
+      </div>
+      <div class="padding">
+        <label>Last Name:</label>
+        <input type="text" placeholder="abcd" />
+      </div>
+      <div class="padding">
+        <label>Gender:</label>
+        <input type="radio" value="male" /> Male
+        <input type="radio" value="female" /> Female
+      </div>
+      <div class="padding">
+        <label>Email:</label>
+        <input type="email" value="abc@gmail.com" class="margin-left" />
+      </div>
+      <div class="padding">
+        <label>Date of birth:</label>
+        <input type="date" class="margin-left" />
+      </div>
+      <div class="padding">
+        <div>
+          <label>Address:</label>
+        </div>
+        <textarea rows="5" cols="30"></textarea>
+      </div>
+      <input type="submit" name="submit" style="margin-top: 18px" />
+    </form>
+  </body>
+</html>
